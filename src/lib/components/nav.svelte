@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { darkMode } from '$lib/dark';
 	import { onMount } from 'svelte';
-
+	import Chatbox from '$lib/components/chatBox.svelte'
 	import { auth, googleProvider, user } from '$lib/firebase';
 
 	import logos from '$lib/components/logos.json';
@@ -203,3 +203,4 @@
 </div>
 
 <padding class="flex w-full h-24" />
+<Chatbox />
